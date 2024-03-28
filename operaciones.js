@@ -42,20 +42,17 @@ function ejecutarOperaciones() {
     const numero2 = Number(document.getElementById("numero2").value);
     const operador = document.getElementById("operacion").value;
     let resultado = 0
-    if (operador === "") {
-        resultado = sumar(numero1, numero2);
-    }
-    else {
-        switch (operador) {
-            case "+": resultado = sumar(numero1, numero2);
-                break;
-            case "-": resultado = restar(numero1, numero2);
-                break;
-            case "*": resultado = multiplicar(numero1, numero2);
-                break;
-            case "/": resultado = dividir(numero1, numero2);
-                break;
-        }
+    switch (operador) {
+        case "": resultado = sumar(numero1, numero2);
+            break;
+        case "+": resultado = sumar(numero1, numero2);
+            break;
+        case "-": resultado = restar(numero1, numero2);
+            break;
+        case "*": resultado = multiplicar(numero1, numero2);
+            break;
+        case "/": resultado = dividir(numero1, numero2);
+            break;
     }
 
     console.log({ operador, numero1, numero2, resultado });
