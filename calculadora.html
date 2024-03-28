@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css" />
+    <title>Mi Calculadora</title>
+</head>
+
+<body>
+    <div id="contenido" class="bordes">
+        <div id="campos">
+            <div id="resultado">
+                <input class="txtNumeros" id="txtResultado" type="text" placeholder="Resultado es= 0" readonly>
+            </div>
+            <div id="numeros">
+                <input class="txtNumeros" id="numero1" type="number" placeholder="0" readonly>
+                <input class="txtNumeros" id="operacion" type="text" placeholder="+" readonly>
+                <input class="txtNumeros" id="numero2" type="number" placeholder="0" readonly>
+            </div>
+        </div>
+
+        <hr width="100%">
+
+        <div id="botones">
+            <div class="fila">
+                <button class="btnNumeros" onclick="ingresarNumero('7')">7</button>
+                <button class="btnNumeros" onclick="ingresarNumero('8')">8</button>
+                <button class="btnNumeros" onclick="ingresarNumero('9')">9</button>
+                <button class="btnOperaciones" onclick="ingresarOperaciones('/')">/</button>
+            </div>
+            <div class="fila">
+                <button class="btnNumeros" onclick="ingresarNumero('4')">4</button>
+                <button class="btnNumeros" onclick="ingresarNumero('5')">5</button>
+                <button class="btnNumeros" onclick="ingresarNumero('6')">6</button>
+                <button class="btnOperaciones" onclick="ingresarOperaciones('*')">*</button>
+            </div>
+            <div class="fila">
+                <button class="btnNumeros" onclick="ingresarNumero('1')">1</button>
+                <button class="btnNumeros" onclick="ingresarNumero('2')">2</button>
+                <button class="btnNumeros" onclick="ingresarNumero('3')">3</button>
+                <button class="btnOperaciones" onclick="ingresarOperaciones('-')">-</button>
+            </div>
+            <div class="fila">
+                <button class="btnNumeros" onclick="ingresarNumero('0')">0</button>
+                <button class="btnOperaciones" onclick="limpiarCampos()">CR</button>
+                <button class="btnNumeros" id="btnIgual" onclick="ejecutarOperaciones()">=</button>
+                <button class="btnOperaciones" onclick="ingresarOperaciones('+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="operaciones.js"></script>
+</body>
+
+</html>

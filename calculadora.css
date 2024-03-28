@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 3%;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    background-color: cadetblue;
+}
+
+#campos {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+#numeros {
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    #numeros {
+        flex-direction: column;
+    }
+}
+
+#botones {
+    width: 500px;
+}
+
+#btnIgual {
+    background-color: dodgerblue;
+    border-radius: 50%;
+}
+
+#txtResultado {
+    width: 94%;
+}
+
+#operacion {
+    width: 15%;
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.txtNumeros {
+    width: 100%;
+    margin: 10px;
+    background-color: #f1f1f1;
+    text-align: right;
+    line-height: 30px;
+    font-size: 30px;
+    border-radius: 12px;
+}
+
+.btnNumeros {
+    margin: 10px;
+    background-color: #f1f1f1;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+.btnOperaciones {
+    margin: 10px;
+    background-color: blue;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+.bordes {
+    border-radius: 7px;
+    border: 1px solid #00aaff;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btnNumeros:hover {
+    background-color: cadetblue;
+    color: deeppink;
+}
+
+.btnOperaciones:hover {
+    color: deeppink;
+}
